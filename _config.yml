@@ -16,7 +16,7 @@
 title: Geeshang's Blog
 email: geeshangxu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-这个博客会有一些关于机器学习、深度学习、AI的思考与实践。
+  这个博客会有一些关于机器学习、深度学习、AI的思考与实践。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  GeeshangXu
