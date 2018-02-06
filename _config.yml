@@ -23,7 +23,7 @@ github_username:  GeeshangXu
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
 
