@@ -1,9 +1,9 @@
 ---
 layout: post
 permalink: /cnn-blocks
+title: CNN经典模块原理与实现解析
 ---
 
-# CNN经典模块原理与实现解析
 (持续更新中)
 
 ## 概述

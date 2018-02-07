@@ -1,9 +1,10 @@
 ---
 layout: post
 permalink: /convolution-computing
+title:  卷积计算原理与实现解析
 ---
 
-# 卷积计算原理与实现解析 
+ 
 (持续更新中)
 
 ## 1. 卷积概述
