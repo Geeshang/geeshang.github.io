@@ -1,6 +1,6 @@
 # Build settings
 markdown: kramdown
-remote_theme: fongandrew/hydeout
+remote_theme: "fongandrew/hydeout"
 
 title: Geeshang's Blog
 
