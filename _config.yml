@@ -29,8 +29,8 @@ google-analytics: UA-113648937-1
 sidebar_home_link:  true
 # github:
 #   repo: https://github.com/GeeshangXu
-# disqus:
-#   shortname: Geeshang
+disqus:
+  shortname: Geeshang
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
