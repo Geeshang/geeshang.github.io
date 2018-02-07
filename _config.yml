@@ -27,8 +27,8 @@ remote_theme: fongandrew/hydeout
 #   - jekyll-remote-theme
 google-analytics: UA-113648937-1
 sidebar_home_link:  true
-# github:
-#   repo: https://github.com/GeeshangXu
+github:
+  repo: https://github.com/GeeshangXu
 disqus:
   shortname: geeshang
 # Exclude from processing.
