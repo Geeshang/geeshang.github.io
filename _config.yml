@@ -28,7 +28,7 @@ remote_theme: fongandrew/hydeout
 google-analytics: UA-113648937-1
 sidebar_home_link:  true
 github:
-  repo:             https://github.com/GeeshangXu
+  repo: https://github.com/GeeshangXu
 disqus:
   shortname: Geeshang
 # Exclude from processing.
