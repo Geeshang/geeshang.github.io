@@ -23,10 +23,10 @@ github_username:  GeeshangXu
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hydeout
+#theme: jekyll-theme-hydeout
 remote_theme: fongandrew/hydeout
 plugins:
-  - jekyll-feed
+        #  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
