@@ -5,9 +5,11 @@ sidebar_link: true
 permalink: /about/
 ---
 
-Geeshang Xu（许之上）
+许之上(Geeshang Xu)
 
-Email: geeshangxu@gmail.com
+目前在北邮读研，研二，计算机技术专业。关注计算机视觉、大规模机器学习平台、AR、无人驾驶等应用领域。
+
+Email: [geeshangxu@gmail.com](geeshangxu@gmail.com)
 
 GitHub: [https://github.com/GeeshangXu](https://github.com/GeeshangXu)
 
