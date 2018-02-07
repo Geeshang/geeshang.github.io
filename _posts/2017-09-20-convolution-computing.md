@@ -2,6 +2,7 @@
 layout: post
 permalink: /convolution-computing
 title:  卷积计算原理与实现解析
+comments: true
 date: 2018-02-07
 ---
 
