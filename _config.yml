@@ -26,6 +26,7 @@ remote_theme: fongandrew/hydeout
 # iplugins:
 #   - jekyll-remote-theme
 google-analytics: UA-113648937-1
+sidebar_home_link:  true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
