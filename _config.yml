@@ -25,7 +25,7 @@ markdown: kramdown
 remote_theme: fongandrew/hydeout
 #plugins:
 #   - jekyll-remote-theme
-google-analytics: UA-113648937-1
+google_analytics: UA-113648937-1
 sidebar_home_link:  true
 # github:
 #   repo: https://github.com/GeeshangXu
