@@ -4,9 +4,11 @@ permalink: /convolution-computing
 title:  卷积计算原理与实现解析
 comments: true
 date: 2018-03-03
-mathjax: true
+# mathjax: true
 ---
-
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
  
 (持续更新中)
 
