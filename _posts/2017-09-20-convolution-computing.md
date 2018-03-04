@@ -4,6 +4,7 @@ permalink: /convolution-computing
 title:  卷积计算原理与实现解析
 comments: true
 date: 2018-03-03
+mathjax: true
 ---
 
  
@@ -15,7 +16,7 @@ date: 2018-03-03
 高效的卷积计算实现与底层硬件密切相关，基于CPU的实现由于运算过慢，在实际训练与检测场景中一般均不考虑；专用ASIC如Google的TPU、寒武纪的cambricon系列、深鉴科技的系列硬件方案，正在兴起，还未普及；目前在训练场景下大规模应用的是Nvidia的GPU. 
 
 在Nvidia GPU硬件上一层的计算库方面，Nvidia推出的深度学习计算库cuDNN在R3版本以后，成为事实上卷积计算的最佳实现库. 目前流行的深度学习框架如TensorFlow、Pytorch、MXnet、Caffe，在GPU进行卷积计算都是调用cuDNN提供的API.
-
+
 ## 2. 卷积类型
 本文介绍了5种卷积操作. 第1种是普通卷积，是最为常用的；第2、3种从感受野(receptive field)的范围的角度进行划分，包括transposed convolution、dilated Convolution，较常用；第4、5种从权值共享的方式的角度进行划分，包括unshared convolution、tiled convolution，较少用.
 ### 1. Odinary covolution
