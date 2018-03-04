@@ -19,7 +19,7 @@ mathjax: true
 ## 2. 卷积类型
 本文介绍了5种卷积操作. 第1种是普通卷积，是最为常用的；第2、3种从感受野(receptive field)的范围的角度进行划分，包括transposed convolution、dilated Convolution，较常用；第4、5种从权值共享的方式的角度进行划分，包括unshared convolution、tiled convolution，较少用.
 ### 1. Odinary covolution
-卷积有两个输入，1）输入数据 $D\in\mathbb{R}^{NCHW}$. (2)过滤器(filter)或者叫卷积核(kernel) $F\in\mathbb{R}^{KCRS}$.
+卷积有两个输入，1）输入数据 \(D\in\mathbb{R}^{NCHW}\). (2)过滤器(filter)或者叫卷积核(kernel) \(F\in\mathbb{R}^{KCRS}\).
 ### 2. Transposed convolution
 ### 3. Dilated convolution
 ### 4. Unshared convolution
