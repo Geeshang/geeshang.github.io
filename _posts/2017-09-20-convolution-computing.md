@@ -34,9 +34,9 @@ S|卷积核的宽度
 P|输出图片的高度
 Q|输入图片的宽度
 
-其中：$P = f(H, R, u, pad_h)$，$Q = f(W, S, v, pad_w)$
+其中：$P = f(H, R, u, pad\_h)$，$Q = f(W, S, v, pad\_w)$
 
-$$f(H, R, u, pad_h) = \lceil \frac{H - R + 1 + 2pad\_h}{\sigma}  \rceil$$
+$$f(H, R, u, pad\_h) = \left \lceil \frac{H - R + 1 + 2pad\_h}{\sigma} \right \rceil$$
 
 
 ### 2. Transposed convolution
