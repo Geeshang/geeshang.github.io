@@ -3,7 +3,7 @@ layout: post
 permalink: /convolution-computing
 title:  卷积计算原理与实现解析
 comments: true
-date: 2018-03-07
+date: 2018-03-12
 mathjax: true
 ---
  
@@ -19,24 +19,37 @@ mathjax: true
 ## 2. 卷积类型
 本文介绍了5种卷积操作. 第1种是普通卷积，是最为常用的；第2、3种从感受野(receptive field)的范围的角度进行划分，包括transposed convolution、dilated Convolution，较常用；第4、5种从权值共享的方式的角度进行划分，包括unshared convolution、tiled convolution，较少用.
 ### 1. Odinary covolution
-普通卷积操作，以2维卷积为例，有两个输入，输入数据 $D\in\mathbb{R}^{NCHW}$与过滤器(filter)或者叫卷积核(kernel) $F\in\mathbb{R}^{KCRS}$，一个输出，
-输出数据 $O\in\mathbb{R}^{NKPQ}$，都是4维的张量. 符号含义如下表所示：
+普通卷积操作，以2维卷积为例，有两个输入，输入数据 $D\in\mathbb{R}^{NC_{in}H_{in}W_{in}}$与过滤器(filter)或者叫卷积核(kernel) $F\in\mathbb{R}^{C_{in}C_{out}H_{k}W_{k}}$，一个输出，
+输出数据 $O\in\mathbb{R}^{NC_{out}H_{out}W_{out}}$，都是4维的张量. 符号含义如下表所示：
 
 符号|含义
 ---|---
 N|mini-batch中图片的数量
-C|输入特征图（feature map）的数量
-H|输入图片的高度
-W|输入图片的宽度
-K|输出特征图的数量
-R|卷积核的高度
-S|卷积核的宽度
-P|输出图片的高度
-Q|输入图片的宽度
+$C_{in}$|输入通道的数量
+$H_{in}$|输入图片（或特征图）的高度
+$W_{in}$|输入图片（或特征图）的宽度
+$C_{out}$|输出通道的数量
+$H_{k}$|卷积核的高度
+$W_{k}$|卷积核的宽度
+$H_{out}$|输出特征图的高度
+$W_{out}$|输入特征图的宽度
+$pad\_h$|对高度的padding大小
+$pad\_w$|对宽度的padding大小
+$\sigma$|卷积步长（stride）
 
-其中：$P = f(H, R, u, pad\_h)$，$Q = f(W, S, v, pad\_w)$
+输出特征图的大小，由输入特征图的大小、卷积核的大小、padding的大小、步长stride共同决定，其长宽计算公式如下：
 
-$$f(H, R, u, pad\_h) = \left \lceil \frac{H - R + 1 + 2pad\_h}{\sigma} \right \rceil$$
+$$H_{out} = f(H_{in}, H_{k}, \sigma, pad\_h) = \left \lceil \frac{H_{in} - H_{k} + 1 + 2pad\_h}{\sigma} \right \rceil$$
+
+$$W_{out} = f(W_{in}, W_{k}, \sigma, pad\_w) = \left \lceil \frac{W_{in} - W_{k} + 1 + 2pad\_w}{\sigma} \right \rceil$$
+
+卷积计算时间复杂度：
+
+$$O\left (H_{k} \cdot W_{k}  \cdot H_{out} \cdot W_{out} \cdot C_{in} \cdot C_{out} \right )$$
+
+卷积计算空间复杂度：
+
+$$O\left (H_{k} \cdot W_{k} \cdot C_{in} \cdot C_{out} \right )$$
 
 
 ### 2. Transposed convolution
@@ -68,3 +81,5 @@ $$f(H, R, u, pad\_h) = \left \lceil \frac{H - R + 1 + 2pad\_h}{\sigma} \right \r
 [6] [hacker news comments over fbfft](https://news.ycombinator.com/item?id=10282903)
 
 [7] [soumith/convnet-benchmarks](https://github.com/soumith/convnet-benchmarks)
+
+[8] [He et al. Convolutional Neural Networks at Constrained Time Cost](https://arxiv.org/pdf/1412.1710.pdf)
