@@ -10,7 +10,7 @@ mathjax: true
 (持续更新中)
 
 ## 1. 卷积概述
-卷积操作(Convolution Operation)是卷积神经网络(CNN)的核心操作，本文从各种卷积操作原理进行介绍，着重计算部分，并简介几种卷积计算的实现方式，包括转换为矩阵相乘、快速傅里叶变换、直接计算. 
+卷积操作(Convolution Operation)是卷积神经网络(CNN)的核心操作，对于CNN的网络结构，你可能比较清楚，各种深度学习框架调得也很溜，本文从各种卷积操作原理进行介绍，着重计算部分，并简介几种卷积计算的实现方式，包括转换为矩阵相乘、快速傅里叶变换、直接计算. 
 
 高效的卷积计算实现与底层硬件密切相关，基于CPU的实现由于运算过慢，在实际训练与检测场景中一般均不考虑；专用ASIC如Google的TPU、寒武纪的cambricon系列、深鉴科技的系列硬件方案，正在兴起，还未普及；目前在训练场景下大规模应用的是Nvidia的GPU. 
 
@@ -62,10 +62,6 @@ $$O\left (H_{k} \cdot W_{k} \cdot C_{in} \cdot C_{out} \right )$$
 ### （1）转换为矩阵乘法
 ### （2）利用快速傅里叶变换
 ### （3）直接计算
-
-## 4. 深度学习框架实现
-### pytorch
-### tensorflow
 
 ## 参考文献
 [1] [Dumoulin et al. A guide to convolution arithmetic for deep learning](https://arxiv.org/pdf/1603.07285.pdf)
