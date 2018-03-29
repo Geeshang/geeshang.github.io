@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /cnn-evolution
-title: 解读CNN进化之路
+title: 解读CNN进化之路（持续更新中）
 comments: true
 date: 2018-03-17
 mathjax: true
@@ -21,7 +21,9 @@ mathjax: true
 论文原文：
 [ImageNet Classification with Deep Convolutional Neural Networks](https://www.cs.toronto.edu/~fritz/absps/imagenet.pdf)
 ## VGG
-网络结构图：
+网络结构图
+
+VGG more popular than GoogelNet
 
 论文原文：[Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556.pdf)
 ## GoogleNet
