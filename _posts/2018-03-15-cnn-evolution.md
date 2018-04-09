@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /cnn-evolution
+permalink: http://geeshang.top/cnn-evolution
 title: 解读CNN进化之路（持续更新中）
 comments: true
 date: 2018-04-09
