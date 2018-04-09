@@ -18,7 +18,7 @@ permalink: /
 ## 二、目标检测、语义分割、实例分割
 这个系列会针对计算机视觉领域中，目标检测（Object Detecion）、语义分割（Semantic Segmentation）与实例分割（Instance Segmentation）这三个应用领域，做一些技术上的分享，会结合代码实现解读关键点。
 
-1. ### [解读R-CNN魔改之路：从R-CNN到Mask R-CNN](geesang.top/rcnn)
+1. ### [解读R-CNN魔改之路：从R-CNN到Mask R-CNN](/rcnn)
 ---
 
 ## 三、模型压缩

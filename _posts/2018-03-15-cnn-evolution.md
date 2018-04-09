@@ -1,7 +1,7 @@
 ---
 layout: post
-permalink: http://geeshang.top/cnn-evolution
-title: 解读CNN进化之路（持续更新中）
+permalink: /cnn-evolution
+title: 解读CNN进化之路（持续更新中）
 comments: true
 date: 2018-04-09
 mathjax: true
