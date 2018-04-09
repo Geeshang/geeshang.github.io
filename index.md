@@ -9,10 +9,10 @@ permalink: /
 ## 一、深度学习基础解析
 这个系列会做一些深度学习基础技术上的分享，包括CNN(卷积神经网络)与RNN(递归神经网络)相关原理，会配合PyTorch进行实现解析。
 
-1. ### [解读CNN网络结构进化之路](geesang.top/cnn-evolution)
+1. ### [解读CNN网络结构进化之路](/cnn-evolution)
     从CNN鼻祖LeNet5、再到掀起深度学习浪潮的AlexNet，CNN发展到今天，出现了众多网络结构，诸如VGG、GoogleNet、ResNet、DenseNet、ResNext。这些网络结构都是怎样的，他们之间有哪些联系与区别，本文将梳理CNN的发展脉络，解读其进化之路。
 
-2. ### [拆卸组装RNN、LSTM、GRU单元](geesang.top/rnn-cell)
+2. ### [拆卸组装RNN、LSTM、GRU单元](/rnn-cell)
 ---
 
 ## 二、目标检测、语义分割、实例分割
