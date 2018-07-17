@@ -51,9 +51,21 @@ $$H_{out} = f(H_{in}, H_{k}, \sigma, pad\_h) = \left \lfloor \frac{H_{in} - H_{k
 上面是输出特征图高度的计算，宽度计算类比可以得出，实际中一般高宽是相等的。
 
 #### 感受野（receptive field）的计算
-$$RF = (RF_{pre} - 1) * stride + kernel$$
+$$RF_k = RF_{k-1} + (kernel - 1) \times \prod_{i=1}^{k-1}stride_i$$
 
-其中$RF_{pre}$代表上一层的感受野大小，$kernel$是卷积核大小。所谓感受野，就是这层卷积出来的每个特征点，有多大范围的输入图片信息影响到这个特征点，kernel大小为3x3的卷积层，stride为1，叠加两次感受野大小为5，叠加三次，感受野大小为7，再叠加一次，stride为2，按照上述公式计算，$RF_{pre}=7$, $stride=2$, $kernel=3$, 那么$RF=15$.
+其中$RF_{k-1}$代表上一个卷积层的感受野大小，$kernel$是本层卷积核大小。$\prod_{i=1}^{k-1}stride_i$代表之前所有层stride连乘积（不包含本层）。另外pooling层计算感受野时与卷积层是一样的，都有kernel与stride。
+
+所谓感受野，就是这层卷积出来的每个特征点，有多大范围的输入图片信息影响到这个特征点。
+
+看个例子，比如计算AlexNet的前几层特征图的感受野计算过程：
+
+```
+conv1: kernel = 11x11, stride = 4
+pool1: kernel = 3x3, stride = 2
+conv2: kernel = 5x5, stride = 1
+pool2: kernel = 3x3, stride = 2
+```
+按照上述公式逐步计算感受野大小，首先conv1作为为第一层其特征图就是他的kernel大小 `conv1=11`，接下来依次按照公式进行计算着 `pool1=11+(2-1)x4=19`, `conv2 = 19+(5-1)x4x2=51`, `pool2 = 51+(3-1)x8x1 = 67`
 
 #### 卷积计算时间复杂度：
 
@@ -65,7 +77,7 @@ $$O\left (H_{k} \cdot W_{k}  \cdot H_{out} \cdot W_{out} \cdot C_{in} \cdot C_{o
 
 $$O\left (H_{k} \cdot W_{k} \cdot C_{in} \cdot C_{out} \right )$$
 
-每层卷积，参数量都是在卷积核上了，bias太少了只有$C_{out}$个。
+每层卷积，参数量都是在卷积核上了，bias太少了只有$C_{out}$个。
 
 
 ### 2. Transposed convolution
