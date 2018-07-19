@@ -21,7 +21,7 @@ permalink: /
 这个系列会针对计算机视觉领域中，目标检测（Object Detecion）、语义分割（Semantic Segmentation）与实例分割（Instance Segmentation）这三个应用领域，做一些技术上的分享。
 
 1. ### [解读R-CNN魔改之路：从R-CNN到Mask R-CNN](/rcnn)
-    从R-CNN、SPP-Net、Fast R-CNN、Fater R-CNN到Mask R-CNN，这一路算是在深度学习时代目标检测（object detection）的里程碑式的论文，是two-stage这个分支的代表作。R-CNN怎么就越来越faster了？Mask R-CNN添加一个分支就把目标检测与实例分割（instance segmentation）联系起来了？本文将梳理R-CNN这一支的发展历程，解读其魔改之路。
+    从R-CNN、SPP-Net、Fast R-CNN、Faster R-CNN到Mask R-CNN，这一路算是在深度学习时代目标检测（object detection）的里程碑式的论文，是two-stage这个分支的代表作。R-CNN怎么就越来越faster了？Mask R-CNN添加一个分支就把目标检测与实例分割（instance segmentation）联系起来了？本文将梳理R-CNN这一支的发展历程，解读其魔改之路。
 
 ---
 
