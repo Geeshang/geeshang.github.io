@@ -18,3 +18,9 @@
 3. rename
 
    command + option + n
+
+## Everything Vimfied
+
+- IDE: Vimbinding!
+- Jupyter Notebook: Vimbinding!
+- VSCode: vimbingding!
