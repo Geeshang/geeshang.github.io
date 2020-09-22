@@ -1,30 +1,6 @@
 # Loss and evaluation metric
 
-## 构造 Loss Function 的方式
-
-### 最大似然（MLE）
-
-### 最大后验（MAP）
-
-- L1线性回归（Lasso回归）：权重W为拉普拉斯分布
-- L2线性回归（Ridge回归）：权重W为高斯先验分布
-
-> 一个普通的线性回归函数，给参数 w 加上一个高斯的先验分布，并用最大后验来构造目标函数，那么，这就相当于给目标函数加上一个 L2 正则项，这时的线性回归，也叫做岭回归（Ridge regression），这时的 logistic regression，叫做。。呃，L2 regularized logistic regression（= =），如果我们给参数 w 加上一个拉普拉斯的先验分布，那么我们可以让 w 变得更加稀疏。
->
-> 作者：dontbeatmycat
-> 链接：https://www.zhihu.com/question/24900876/answer/46567811
-> 来源：知乎
-> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-## Loss Function
-
-https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/
-
-## Evaluation Metrics
-
-### Regression
+## Evaluation Metrics - Regression and Forecasting
 
 <!-- prettier-ignore -->
 | 评价指标 | 名称 | 计算式 | 特点 |
@@ -45,10 +21,36 @@ $y_{i}是样本i的真实值$，$\hat{y}_{i}是样本i的预测值$， $n$代表
 2. 偏向高销量-偏态分布：MAPE
 3. 偏向低销量-偏态分布(长尾效应)：WMAPE
 
-### Classification
+## Evaluation Metrics - Classification
+
+## 构造 Loss Function 的方式
+
+### 最大似然（MLE）
+
+### 最大后验（MAP）
+
+- L1 线性回归（Lasso 回归）：权重 W 为拉普拉斯分布
+- L2 线性回归（Ridge 回归）：权重 W 为高斯先验分布
+
+> 一个普通的线性回归函数，给参数 w 加上一个高斯的先验分布，并用最大后验来构造目标函数，那么，这就相当于给目标函数加上一个 L2 正则项，这时的线性回归，也叫做岭回归（Ridge regression），这时的 logistic regression，叫做。。呃，L2 regularized logistic regression（= =），如果我们给参数 w 加上一个拉普拉斯的先验分布，那么我们可以让 w 变得更加稀疏。
+>
+> 作者：dontbeatmycat
+> 链接：https://www.zhihu.com/question/24900876/answer/46567811
+> 来源：知乎
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## Loss Function
+
+https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826/
 
 ## 参考
 
-[Mean_absolute_percentage_error](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error)
+- [Mean_absolute_percentage_error](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error)
 
-[measuring-forecast-accuracy](https://forecastsolutions.co.uk/measuring-forecast-accuracy.htm)
+- [measuring-forecast-accuracy](https://forecastsolutions.co.uk/measuring-forecast-accuracy.htm)
+
+- 介绍常见的预测评估指标 [Statistical Forecast Errors](https://blog.olivehorse.com/statistical-forecast-errors)
+
+- MASE 评估指标论文，适用于某些时间段内零值较多的间歇性的、季节性的预测问题 [Another look at forecast-accuracy metrics for intermittent demand](https://robjhyndman.com/papers/foresight.pdf)

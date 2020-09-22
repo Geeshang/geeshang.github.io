@@ -10,6 +10,9 @@
 
    pd.Timestamp('2019-10-06').isocalendar(), 遵循 ISO 8601
 
+3. Python 内置 date 库
+   date.isocalendar()
+
 ## ISO 8601
 
 > Week date representations are in the formats as shown in the adjacent box. [YYYY] indicates the ISO week-numbering year which is slightly different from the traditional Gregorian calendar year (see below). [Www] is the week number prefixed by the letter W, from W01 through W53. [D] is the weekday number, from 1 through 7, beginning with Monday and ending with Sunday.
